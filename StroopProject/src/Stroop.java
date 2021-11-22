@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -24,7 +25,10 @@ public class Stroop{
 
     static {
         try {
-            writer = new BufferedWriter(new FileWriter("StroopProject/src/data.txt",true));
+            String root = System.getProperty("user.dir");
+            String FileName = "data.txt";
+            String FilePath = root + File.separator+"src" + File.separator +FileName;
+            writer = new BufferedWriter(new FileWriter(FilePath,true));
         } catch (IOException e) {
             e.printStackTrace();
         }
