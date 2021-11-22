@@ -24,7 +24,7 @@ public class Stroop{
 
     static {
         try {
-            writer = new BufferedWriter(new FileWriter("src/data.txt",true));
+            writer = new BufferedWriter(new FileWriter("StroopProject/src/data.txt",true));
         } catch (IOException e) {
             e.printStackTrace();
         }
