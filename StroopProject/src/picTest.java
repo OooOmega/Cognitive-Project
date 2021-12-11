@@ -10,11 +10,21 @@ public class picTest {
     static JPanel panel=new JPanel();
     static JLabel pane=new JLabel();
     static Font f = new Font("Times new Roman", Font.PLAIN, 150);
-    static JButton button1=new JButton("Cat");
-    static JButton button2=new JButton("Dog");
-    static JButton button3=new JButton("Fish");
-    static String[] picName={"pic1.jpg","pic2","pic3"};//add text
-    static String[] answer ={"Cat","Dog","Fish"};//add color
+    static JButton button1=new JButton("A");
+    static JButton button2=new JButton("B");
+    static JButton button3=new JButton("C");
+    static JButton button4=new JButton("D");
+    static String[] picname1 ={"pic1_1.png","pic1_2.png","pic1_3.png","pic1_4.png","pic1_5.png"};
+    static String[] answer1  ={"B","D","C","A","B"};
+    static String[] picname2 ={"pic2_1.png","pic2_2.png","pic2_3.png","pic2_4.png","pic2_5.png"};
+    static String[] answer2 = {"D","B","C","C","D"};
+    static String[] picname3 ={"pic3_1.png","pic3_2.png","pic3_3.png","pic3_4.png","pic3_5.png"};
+    static String[] answer3 = {"C","D","C","D","A"};
+    static String[][] ALLpic = {picname1,picname2,picname3,picname3};
+    static String[][] ALLanswer ={answer1,answer2,answer3,answer3};
+
+    static String[] picName;
+    static String[] answer;
     static int cnt = -1;
     static int correct=0;
     static double time=System.currentTimeMillis();
@@ -29,7 +39,7 @@ public class picTest {
             e.printStackTrace();
         }
     }
-    public static void test() throws Exception {
+    public static void test(int n) throws Exception {
         main.setVisible(false);
         main = new Main();
         main.setVisible(true);
@@ -38,7 +48,7 @@ public class picTest {
         double height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽
         main.setSize((int) width, (int) height);//设置大小
         main.setLocation(0, 0); //设置窗体居中显示
-        main.setTitle("Stroop");
+        main.setTitle("picTest");
         main.setLayout(null);
         main.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         main.setLayout(new GridLayout(2, 1));
@@ -47,15 +57,18 @@ public class picTest {
         button1.addActionListener(e -> {
             if (cnt==-1){
                 cnt++;
-                pane.setIcon(new ImageIcon("src//picture//"+picName[cnt]));
+                pane.setIcon(new ImageIcon("src//picture//"+picname1[n]));
+                pane.setText("");
                 time = System.currentTimeMillis();
             }
             else {
                 double cost = System.currentTimeMillis() - time;
                 //System.out.println(System.currentTimeMillis()-time);
                 time = System.currentTimeMillis();
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
 
-                if (answer[cnt].equals( "Cat")) {
+                if (answer[n].equals( "A")) {
                     correct++;
                     try {
                         writer.write(cost + ",correct");
@@ -72,10 +85,12 @@ public class picTest {
                     }
                 }
                 cnt++;
-                if (cnt< picName.length) {
-                    pane.setIcon(new ImageIcon("src//picture//" + picName[cnt]));
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (cnt< 3) {
+                    pane.setIcon(new ImageIcon("src//picture//" + picName[n]));
                 }
-                if (cnt == picName.length) {
+                if (cnt == 3) {
                     try {
                         writer.write("picture test finish");
                         writer.newLine();
@@ -98,15 +113,17 @@ public class picTest {
         button2.addActionListener(e -> {
             if (cnt==-1){
                 cnt++;
-                pane.setIcon(new ImageIcon("src//picture//"+picName[cnt]));
+                pane.setIcon(new ImageIcon("src//picture//"+picname1[n]));
+                pane.setText("");
                 time = System.currentTimeMillis();
             }
             else {
                 double cost = System.currentTimeMillis() - time;
                 //System.out.println(System.currentTimeMillis()-time);
                 time = System.currentTimeMillis();
-
-                if (answer[cnt].equals( "Dog")) {
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (answer[n].equals("B")) {
                     correct++;
                     try {
                         writer.write(cost + ",correct");
@@ -123,12 +140,14 @@ public class picTest {
                     }
                 }
                 cnt++;
-                if (cnt< picName.length) {
-                    pane.setIcon(new ImageIcon("src//picture//" + picName[cnt]));
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (cnt< 3) {
+                    pane.setIcon(new ImageIcon("src//picture//" + picName[n]));
                 }
-                if (cnt == picName.length) {
+                if (cnt == 3) {
                     try {
-                        writer.write("---");
+                        writer.write("picture test finish");
                         writer.newLine();
                         writer.flush();
                     } catch (IOException ex) {
@@ -149,15 +168,17 @@ public class picTest {
         button3.addActionListener(e -> {
             if (cnt==-1){
                 cnt++;
-                pane.setIcon(new ImageIcon("src//picture//"+picName[cnt]));
+                pane.setIcon(new ImageIcon("src//picture//"+picname1[n]));
+                pane.setText("");
                 time = System.currentTimeMillis();
             }
             else {
                 double cost = System.currentTimeMillis() - time;
                 //System.out.println(System.currentTimeMillis()-time);
                 time = System.currentTimeMillis();
-
-                if (answer[cnt].equals( "Fish")) {
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (answer[n].equals( "C")) {
                     correct++;
                     try {
                         writer.write(cost + ",correct");
@@ -174,12 +195,14 @@ public class picTest {
                     }
                 }
                 cnt++;
-                if (cnt< picName.length) {
-                    pane.setIcon(new ImageIcon("src//picture//" + picName[cnt]));
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (cnt< 3) {
+                    pane.setIcon(new ImageIcon("src//picture//" + picName[n]));
                 }
-                if (cnt == picName.length) {
+                if (cnt == 3) {
                     try {
-                        writer.write("---");
+                        writer.write("picture test finish");
                         writer.newLine();
                         writer.flush();
                     } catch (IOException ex) {
@@ -197,20 +220,75 @@ public class picTest {
                 }
             }
         });
-//        pane.setText("按下任意键开始，请选出正确的颜色");
-//        pane.setFont(new Font("宋体", Font.PLAIN, 50));
+        button4.addActionListener(e -> {
+            if (cnt==-1){
+                cnt++;
+                pane.setIcon(new ImageIcon("src//picture//"+picname1[n]));
+                pane.setText("");
+                time = System.currentTimeMillis();
+            }
+            else {
+                double cost = System.currentTimeMillis() - time;
+                //System.out.println(System.currentTimeMillis()-time);
+                time = System.currentTimeMillis();
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (answer[n].equals( "D")) {
+                    correct++;
+                    try {
+                        writer.write(cost + ",correct");
+                        writer.newLine();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                } else {
+                    try {
+                        writer.write(cost + ",false");
+                        writer.newLine();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                cnt++;
+                picName = ALLpic[cnt];
+                answer =ALLanswer[cnt];
+                if (cnt< 3) {
+                    pane.setIcon(new ImageIcon("src//picture//" + picName[n]));
+                }
+                if (cnt == 3) {
+                    try {
+                        writer.write("picture test finish");
+                        writer.newLine();
+                        writer.flush();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    try {
+                        writer.close();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    JOptionPane.showMessageDialog(null, "Thanks!");
+                    main.setVisible(false);
+                    System.out.println((double) correct / picName.length);
+                    System.exit(0);
+                }
+            }
+        });
+        pane.setText("按下任意键开始，请选出图中的动物");
+        pane.setFont(new Font("宋体", Font.PLAIN, 50));
         panel2.add(pane);
         button1.setFont(f);
         button2.setFont(f);
         button3.setFont(f);
-       /* button4.setFont(f);
-        button5.setFont(f);
+        button4.setFont(f);
+        /* button5.setFont(f);
         button6.setFont(f);*/
         panel.add(button1);
         panel.add(button2);
         panel.add(button3);
-        /*panel.add(button4);
-        panel.add(button5);
+        panel.add(button4);
+        /*panel.add(button5);
         panel.add(button6);*/
         main.add(panel2);
         main.add(panel);
