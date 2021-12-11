@@ -106,7 +106,11 @@ public class picTest {
                     JOptionPane.showMessageDialog(null, "Thanks!");
                     main.setVisible(false);
                     System.out.println((double) correct / picName.length);
-                    System.exit(0);
+                    try {
+                        calculate.test(n);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });
@@ -161,7 +165,11 @@ public class picTest {
                     JOptionPane.showMessageDialog(null, "Thanks!");
                     main.setVisible(false);
                     System.out.println((double) correct / picName.length);
-                    System.exit(0);
+                    try {
+                        calculate.test(n);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });
@@ -216,7 +224,11 @@ public class picTest {
                     JOptionPane.showMessageDialog(null, "Thanks!");
                     main.setVisible(false);
                     System.out.println((double) correct / picName.length);
-                    System.exit(0);
+                    try {
+                        calculate.test(n);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });
@@ -271,7 +283,11 @@ public class picTest {
                     JOptionPane.showMessageDialog(null, "Thanks!");
                     main.setVisible(false);
                     System.out.println((double) correct / picName.length);
-                    System.exit(0);
+                    try {
+                        calculate.test(n);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         });

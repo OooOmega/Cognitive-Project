@@ -35,7 +35,7 @@ public class Main extends JFrame {
             try {
                 Stroop.test(n);
                 //picTest.test(n);
-                //caculate.test(n);
+                //calculate.test(n);
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
