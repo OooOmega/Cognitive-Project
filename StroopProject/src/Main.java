@@ -2,13 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Scanner;
 
 public class Main extends JFrame {
     static Main main=new Main();
     public static void main(String[] args) {
         JButton start=new JButton("Start");
         start.setFont(new Font("Times new Roman", Font.PLAIN, 100));
-
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please input test number :");
+        int n = in.nextInt();
         start.setSize(100,100);
         double width = Toolkit.getDefaultToolkit().getScreenSize().width; //得到当前屏幕分辨率的高
         double height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽
@@ -22,7 +25,7 @@ public class Main extends JFrame {
         main.setDefaultCloseOperation(EXIT_ON_CLOSE);
         start.addActionListener(e -> {
             try {
-                Stroop.test();
+                Stroop.test(n);
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
