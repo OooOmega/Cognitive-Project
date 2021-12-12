@@ -18,8 +18,8 @@ public class calculate {
     static JTextField field = new JTextField(150);
     static String[][] test = {{"14*8-2*4", "22*6+3*2", "3*74+5*3", "54*7+3*4", "18*7-2*3"},
             {"52*8-5*3 (tips: 401)", "86*3+4*3  (tips:270)", "4*64-4*2  (tips:248)", "8*13+4*3  (tips:116)", "5*22-6*9  (tips:56)"},
-            {"67*3+2*8  (tips:217)", "5*24-6*8  (tips:82)", "61*2-7*7  (tips:83)", "23*7+4*4  (tips:167)", "19*6+3*2  (tips:108)"}};
-    static int[][] answer = {{104, 138, 237, 390, 120}, {401, 270, 248, 116, 56}, {185, 82, 83, 167, 108}};
+            {"67*3+2*8  (tips:185)", "5*24-6*8  (tips:82)", "61*2-7*7  (tips:83)", "23*7+4*4  (tips:167)", "19*6+3*2  (tips:108)"}};
+    static int[][] answer = {{104, 138, 237, 390, 120}, {401, 270, 248, 116, 56}, {217, 72, 73, 177, 120}};
     static double time = System.currentTimeMillis();
     static BufferedWriter writer;
 
