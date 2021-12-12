@@ -14,7 +14,7 @@ public class calculate {
     static int input;static double cost;
     static int cnt=0;
     static boolean validity;
-    static Font f = new Font("Times new Roman", Font.PLAIN, 150);
+    static Font f = new Font("Times new Roman", Font.PLAIN, 50);
     static JTextField field = new JTextField(150);
     static String[][] test = {{"14*8-2*4", "22*6+3*2", "3*74+5*3", "54*7+3*4", "18*7-2*3"},
             {"52*8-5*3 (tips: 401)", "86*3+4*3  (tips:270)", "4*64-4*2  (tips:248)", "8*13+4*3  (tips:116)", "5*22-6*9  (tips:56)"},
@@ -41,7 +41,8 @@ public class calculate {
         double width = Toolkit.getDefaultToolkit().getScreenSize().width; //得到当前屏幕分辨率的高
         double height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽
         main.setSize((int) width/2, (int) height/2);//设置大小
-        main.setLocation(0, 0); //设置窗体居中显示
+        field.setFont(f);
+        main.setLocation((int) width/2, (int) height/2); //设置窗体居中显示
         main.setTitle("calTest");
         main.setLayout(null);
         main.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
