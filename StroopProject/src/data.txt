@@ -1,14 +1,1 @@
-303.0,false
-230.0,false
-284.0,false
-228.0,false
-174.0,false
-208.0,false
-276.0,false
-268.0,false
-208.0,correct
-base test finished
-173.0,correct
-199.0,correct
-182.0,correct
-picture test finish
+
