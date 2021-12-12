@@ -15,7 +15,7 @@ public class Main extends JFrame {
         boolean flag=false;
         while (!flag){
             String s=JOptionPane.showInputDialog("Please input test number(1-5):");
-            if (s.length()>1||s.charAt(0)>'5'||s.charAt(0)<'1') {
+            if (s.length()!=1||s.charAt(0)>'5'||s.charAt(0)<'1') {
                 JOptionPane.showMessageDialog(null,"Invalid input!");
                 flag=false;
             }

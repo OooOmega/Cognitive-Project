@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ab5fa5-b190-4919-ad9f-ca1eb1941b2c" name="Changes" comment="">
+    <list default="true" id="64ab5fa5-b190-4919-ad9f-ca1eb1941b2c" name="Changes" comment="modify exception handling&#10;Zhang Zhentao">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StroopProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StroopProject/calculate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/calculate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StroopProject/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +78,14 @@
       <workItem from="1639243176495" duration="16582000" />
       <workItem from="1639289105802" duration="1632000" />
     </task>
+    <task id="LOCAL-00001" summary="modify exception handling&#10;Zhang Zhentao">
+      <created>1639292877803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639292877803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +102,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modify exception handling&#10;Zhang Zhentao" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify exception handling&#10;Zhang Zhentao" />
   </component>
 </project>
