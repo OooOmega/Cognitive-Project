@@ -10,10 +10,9 @@
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StroopProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StroopProject/calculate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/calculate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StroopProject/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StroopProject/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <workItem from="1639145903215" duration="12038000" />
       <workItem from="1639213184989" duration="2810000" />
       <workItem from="1639243176495" duration="16582000" />
-      <workItem from="1639289105802" duration="1334000" />
+      <workItem from="1639289105802" duration="1632000" />
     </task>
     <servers />
   </component>
