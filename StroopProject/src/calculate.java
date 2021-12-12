@@ -42,7 +42,7 @@ public class calculate {
         double height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽
         main.setSize((int) width/2, (int) height/2);//设置大小
         field.setFont(f);
-        main.setLocation((int) width/2, (int) height/2); //设置窗体居中显示
+        main.setLocation((int) width/4, (int) height/4); //设置窗体居中显示
         main.setTitle("calTest");
         main.setLayout(null);
         main.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
