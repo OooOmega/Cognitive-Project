@@ -292,3 +292,23 @@ base test finished
 277.0,correct
 277.0,correct
 picture test finish
+3.0,totalcost
+286.0,false
+276.0,false
+292.0,false
+247.0,false
+214.0,false
+260.0,false
+411.0,false
+420.0,false
+404.0,correct
+base test finished
+357.0,correct
+373.0,correct
+356.0,correct
+picture test finish
+2638.0,false
+2091.0,false,correct tips
+1760.0,false,incorrect tips
+calculate test finished
+2.0,totalcost

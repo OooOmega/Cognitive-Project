@@ -10,7 +10,7 @@ public class calculate {
     static JFrame main = Main.main;
     static JPanel panel = new JPanel();
     static JLabel pane = new JLabel();
-    static JButton button=new JButton();
+    static JButton button=new JButton("Confirm");
     static int input;static double cost;
     static int cnt=0;
     static Font f = new Font("Times new Roman", Font.PLAIN, 150);

@@ -311,3 +311,23 @@ picture test finish
 2091.0,false,correct tips
 1760.0,false,incorrect tips
 calculate test finished
+2.0,totalcost
+2.0,totalcost
+286.0,false
+199.0,false
+267.0,false
+246.0,false
+204.0,false
+238.0,false
+231.0,false
+235.0,false
+198.0,correct
+base test finished
+273.0,correct
+215.0,correct
+252.0,correct
+picture test finish
+2055.0,false
+1572.0,false,incorrect tips
+1400.0,false,correct tips
+calculate test finished
