@@ -39,24 +39,22 @@ public class calculate {
         main.setVisible(true);
         double width = Toolkit.getDefaultToolkit().getScreenSize().width; //得到当前屏幕分辨率的高
         double height = Toolkit.getDefaultToolkit().getScreenSize().height;//得到当前屏幕分辨率的宽
-        main.setSize((int) width/4, (int) height/4);//设置大小
+        main.setSize((int) width/2, (int) height/2);//设置大小
         main.setLocation(0, 0); //设置窗体居中显示
         main.setTitle("calTest");
         main.setLayout(null);
         main.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         main.setLayout(new GridLayout(2, 1));
         panel.setLayout(new GridLayout(3, 2));
-        pane.setLayout(new GridLayout(3,2));
         JPanel panel2 = new JPanel();
+        panel2.setLayout(new GridLayout(3,1));
         button.setSize(200,100);
-        panel2.add(button);
-        pane.add(field);
-        pane.setText("按下任意键开始，请选出图中的动物");
-        pane.setFont(new Font("宋体", Font.PLAIN, 50));
-        pane.add(field);
+
+        pane.setFont(new Font("宋体", Font.PLAIN, 40));
+        panel2.add(field);
         panel2.add(pane);
+        panel2.add(button);
         main.add(panel2);
-        main.add(panel);
     }
 
     public static void test(int n) throws Exception {

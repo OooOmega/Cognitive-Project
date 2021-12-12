@@ -228,3 +228,86 @@ picture test finish
 12162.0,false,incorrect tips
 6090.0,correct,correct tips
 calculate test finished
+1.0,totalcost
+396.0,correct
+798.0,false
+394.0,false
+389.0,false
+380.0,false
+394.0,false
+476.0,false
+420.0,false
+403.0,false
+base test finished
+334.0,false
+346.0,false
+372.0,false
+picture test finish
+5269.0,false
+1236.0,false,incorrect tips
+1270.0,false,correct tips
+calculate test finished
+1.0,totalcost
+348.0,false
+357.0,false
+315.0,false
+271.0,false
+243.0,false
+284.0,false
+324.0,false
+271.0,false
+261.0,correct
+base test finished
+444.0,correct
+436.0,correct
+308.0,correct
+picture test finish
+2.0,totalcost
+633.0,false
+370.0,false
+363.0,false
+317.0,false
+371.0,false
+341.0,false
+377.0,false
+366.0,false
+428.0,correct
+base test finished
+323.0,correct
+309.0,correct
+389.0,correct
+picture test finish
+1.0,totalcost
+390.0,false
+332.0,false
+324.0,false
+261.0,false
+269.0,false
+246.0,false
+269.0,false
+316.0,false
+238.0,correct
+base test finished
+284.0,correct
+277.0,correct
+277.0,correct
+picture test finish
+3.0,totalcost
+286.0,false
+276.0,false
+292.0,false
+247.0,false
+214.0,false
+260.0,false
+411.0,false
+420.0,false
+404.0,correct
+base test finished
+357.0,correct
+373.0,correct
+356.0,correct
+picture test finish
+2638.0,false
+2091.0,false,correct tips
+1760.0,false,incorrect tips
+calculate test finished
