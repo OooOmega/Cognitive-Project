@@ -1,211 +1,25 @@
-2.0,totalcost
-1671.0,correct
-1254.0,correct
-1504.0,correct
-1469.0,correct
-1283.0,correct
-1397.0,correct
-1552.0,correct
-1318.0,correct
-1459.0,correct
-base test finished
-3402.0,correct
-1628.0,correct
-1252.0,correct
-picture test finish
-2.0,totalcost
-1220.0,correct
-1047.0,correct
-1450.0,correct
-1844.0,correct
-1440.0,correct
-3012.0,correct
-2350.0,correct
-1269.0,correct
-1283.0,correct
-base test finished
-1205.0,correct
-1078.0,correct
-2636.0,correct
-picture test finish
-2.0,totalcost
-1370.0,correct
-1030.0,correct
-1839.0,correct
-2292.0,false
-1187.0,false
-804.0,correct
-1842.0,false
-1767.0,false
-1391.0,correct
-base test finished
-2653.0,correct
-1929.0,correct
-2739.0,correct
-picture test finish
-2.0,totalcost
-962.0,correct
-755.0,correct
-491.0,correct
-844.0,false
-500.0,false
-380.0,false
-405.0,false
-387.0,false
-316.0,false
-base test finished
-403.0,false
-506.0,false
-332.0,correct
-picture test finish
-2.0,totalcost
-301.0,false
-275.0,correct
-786.0,correct
-410.0,correct
-405.0,correct
-420.0,false
-436.0,false
-427.0,correct
-412.0,false
-base test finished
-294.0,false
-284.0,false
-357.0,false
-picture test finish
-2.0,totalcost
-286.0,false
-301.0,false
-325.0,false
-284.0,false
-260.0,correct
-277.0,false
-325.0,correct
-364.0,false
-299.0,false
-base test finished
-274.0,false
-261.0,false
-286.0,false
-picture test finish
-2.0,totalcost
-316.0,false
-316.0,false
-301.0,correct
-347.0,false
-308.0,correct
-428.0,false
-1570.0,correct
-977.0,correct
-1147.0,correct
-base test finished
-2418.0,correct
-1626.0,correct
-1158.0,correct
-picture test finish
-2.0,totalcost
-238.0,false
-429.0,correct
-220.0,correct
-184.0,false
-211.0,false
-316.0,false
-255.0,false
-181.0,false
-215.0,false
-base test finished
-206.0,false
-262.0,false
-246.0,false
-picture test finish
-2.0,totalcost
-302.0,false
-305.0,false
-489.0,false
-421.0,correct
-301.0,false
-308.0,false
-601.0,false
-238.0,false
-261.0,false
-base test finished
-278.0,false
-276.0,false
-387.0,correct
-picture test finish
 1.0,totalcost
-308.0,correct
-433.0,false
-271.0,false
-331.0,correct
-292.0,false
-292.0,false
-327.0,correct
-339.0,correct
-452.0,false
+604.0,correct
+156.0,correct
+149.0,false
+135.0,false
+137.0,false
+143.0,correct
+129.0,correct
+132.0,false
+143.0,false
 base test finished
-323.0,false
-303.0,false
-385.0,false
+95.0,false
+132.0,false
+132.0,false
 picture test finish
-1.0,totalcost
-404.0,false
-443.0,false
-489.0,false
-508.0,false
-452.0,false
-428.0,false
-426.0,false
-412.0,false
-370.0,correct
-base test finished
-805.0,correct
-681.0,false
-386.0,correct
-picture test finish
-1.0,totalcost
-222.0,false
-223.0,false
-324.0,false
-363.0,false
-215.0,false
-206.0,false
-246.0,false
-244.0,false
-189.0,correct
-base test finished
-227.0,correct
-203.0,correct
-263.0,correct
-picture test finish
-1.0,totalcost
-204.0,false
-238.0,false
-308.0,false
-381.0,false
-214.0,correct
-270.0,false
-425.0,false
-215.0,correct
-228.0,false
-base test finished
-218.0,correct
-223.0,correct
-222.0,correct
-picture test finish
+21063.0,false
+10698.0,correct,incorrect tips
+5834.0,correct,correct tips
+calculate test finished
+3.0,totalcost
+6107.0,correct
+19812.0,correct,incorrect tips
+32655.0,correct,correct tips
+calculate test finished
 2.0,totalcost
-351.0,correct
-307.0,correct
-301.0,correct
-269.0,false
-269.0,false
-294.0,false
-276.0,false
-315.0,false
-238.0,false
-base test finished
-313.0,false
-261.0,false
-268.0,false
-picture test finish
-
