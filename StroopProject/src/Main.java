@@ -24,13 +24,7 @@ public class Main extends JFrame {
         main.add(start);
         main.setVisible(true);
         main.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        BufferedWriter  writer= null;
 
-            String root = System.getProperty("user.dir");
-            String FileName = "data.txt";
-            String FilePath = root + File.separator+"src" + File.separator +FileName;
-            writer = new BufferedWriter(new FileWriter(FilePath,true));
-        double st = System.currentTimeMillis();;
         start.addActionListener(e -> {
             try {
                 Stroop.test(n);
@@ -41,10 +35,5 @@ public class Main extends JFrame {
             }
 
         });
-        double cost = System.currentTimeMillis()-st;
-        writer.write(cost + ",totalcost");
-        writer.newLine();
-        writer.flush();
-        writer.close();
     }
 }
