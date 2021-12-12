@@ -64,129 +64,128 @@ public class calculate {
         time = System.currentTimeMillis();
 
         button.addActionListener(e -> {
+            if (!field.getText().equals("")) {
 
-           input = Integer.parseInt(field.getText());
-            field.setText("");
-           cost = System.currentTimeMillis() - time;
-           time = System.currentTimeMillis();
-           cnt++;
-           if(cnt==1){
-           if (input == answer[0][n]) {
-                try {
-                    writer.write(cost + ",correct");
-                    writer.newLine();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
+                input = Integer.parseInt(field.getText());
+                field.setText("");
+                cost = System.currentTimeMillis() - time;
+                time = System.currentTimeMillis();
+                cnt++;
+                if (cnt == 1) {
+                    if (input == answer[0][n]) {
+                        try {
+                            writer.write(cost + ",correct");
+                            writer.newLine();
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
+                    } else {
+                        try {
+                            writer.write(cost + ",false");
+                            writer.newLine();
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                    if (turn)
+                        pane.setText(test[1][n]);
+                    else pane.setText(test[2][n]);
+                } else if (cnt == 2) {
+                    if (turn) {
+                        if (input == answer[1][n]) {
+                            try {
+                                writer.write(cost + ",correct,correct tips");
+                                writer.newLine();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        } else {
+                            try {
+                                writer.write(cost + ",false,correct tips");
+                                writer.newLine();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                        pane.setText(test[2][n]);
+                    } else {
+                        if (input == answer[2][n]) {
+                            try {
+                                writer.write(cost + ",correct,incorrect tips");
+                                writer.newLine();
+
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        } else {
+                            try {
+                                writer.write(cost + ",false,incorrect tips");
+                                writer.newLine();
+
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                        pane.setText(test[1][n]);
+                    }
+                } else {
+                    if (turn) {
+                        if (input == answer[2][n]) {
+                            try {
+                                writer.write(cost + ",correct,incorrect tips");
+                                writer.newLine();
+                                writer.flush();
+
+
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        } else {
+                            try {
+                                writer.write(cost + ",false,incorrect tips");
+                                writer.newLine();
+                                writer.flush();
+
+
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                    }
+                    else {
+                        if (input == answer[1][n]) {
+                            try {
+                                writer.write(cost + ",correct,correct tips");
+                                writer.newLine();
+                                writer.flush();
+
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        } else {
+                            try {
+                                writer.write(cost + ",false,correct tips");
+                                writer.newLine();
+                                writer.flush();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                    }
+                    try {
+                        writer.write("calculate test finished");
+                        writer.newLine();
+                        writer.close();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    JOptionPane.showMessageDialog(null, "Thanks!");
+                    System.exit(0);
                 }
+
             }
-           else {
-                try {
-                    writer.write(cost + ",false");
-                    writer.newLine();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-           if(turn)
-           pane.setText(test[1][n]);
-           else pane.setText(test[2][n]);
-           }
-           else if (cnt==2){
-               if(turn){
-               if (input == answer[1][n]) {
-                   try {
-                       writer.write(cost + ",correct,correct tips");
-                       writer.newLine();
-                   } catch (IOException ex) {
-                       ex.printStackTrace();
-                   }
-               } else {
-                   try {
-                       writer.write(cost + ",false,correct tips");
-                       writer.newLine();
-                   } catch (IOException ex) {
-                       ex.printStackTrace();
-                   }
-               }
-               pane.setText(test[2][n]);
-               }
-               else {
-                   if (input == answer[2][n]) {
-                       try {
-                           writer.write(cost + ",correct,incorrect tips");
-                           writer.newLine();
-
-                       } catch (IOException ex) {
-                           ex.printStackTrace();
-                       }
-                   } else {
-                       try {
-                           writer.write(cost + ",false,incorrect tips");
-                           writer.newLine();
-
-                       } catch (IOException ex) {
-                           ex.printStackTrace();
-                       }
-                   }
-                   pane.setText(test[1][n]);
-               }
-           }
-           else {
-               if(turn){
-                   if (input == answer[2][n]) {
-                   try {
-                       writer.write(cost + ",correct,incorrect tips");
-                       writer.newLine();
-                       writer.flush();
-
-
-                   } catch (IOException ex) {
-                       ex.printStackTrace();
-                   }
-               } else {
-                   try {
-                       writer.write(cost + ",false,incorrect tips");
-                       writer.newLine();
-                       writer.flush();
-
-
-                   } catch (IOException ex) {
-                       ex.printStackTrace();
-                   }
-               }
-               }
-                else {
-                   if (input == answer[1][n]) {
-                       try {
-                           writer.write(cost + ",correct,correct tips");
-                           writer.newLine();
-                           writer.flush();
-
-                       } catch (IOException ex) {
-                           ex.printStackTrace();
-                       }
-                   } else {
-                       try {
-                           writer.write(cost + ",false,correct tips");
-                           writer.newLine();
-                           writer.flush();
-                       } catch (IOException ex) {
-                           ex.printStackTrace();
-                       }
-                   }
-               }
-                try {
-                   writer.write("calculate test finished");
-                   writer.newLine();
-                   writer.close();
-               } catch (IOException ex) {
-                   ex.printStackTrace();
-               }
-               JOptionPane.showMessageDialog(null, "Thanks!");
-
-
-                System.exit(0);
-           }
+            else
+            JOptionPane.showMessageDialog(null,"Please answer the question");
 
         });
 
