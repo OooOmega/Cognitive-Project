@@ -13,6 +13,7 @@ public class calculate {
     static JButton button=new JButton("Confirm");
     static int input;static double cost;
     static int cnt=0;
+    static boolean validity;
     static Font f = new Font("Times new Roman", Font.PLAIN, 150);
     static JTextField field = new JTextField(150);
     static String[][] test = {{"14*8-2*4", "22*6+3*2", "3*74+5*3", "54*7+3*4", "18*7-2*3"},
@@ -64,7 +65,15 @@ public class calculate {
         time = System.currentTimeMillis();
 
         button.addActionListener(e -> {
-            if (!field.getText().equals("")) {
+            try {
+                validity=true;
+                Integer.parseInt(field.getText());
+            }
+            catch (Exception e1){
+                validity=false;
+            }
+
+            if (!field.getText().equals("")&&validity) {
 
                 input = Integer.parseInt(field.getText());
                 field.setText("");
@@ -185,7 +194,7 @@ public class calculate {
 
             }
             else
-            JOptionPane.showMessageDialog(null,"Please answer the question");
+            JOptionPane.showMessageDialog(null,"Invalid input!");
 
         });
 
