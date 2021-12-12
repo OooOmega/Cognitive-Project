@@ -433,7 +433,7 @@ public class Stroop{
                 }
             }
         });*/
-        pane.setText("按下任意键开始，请选出正确的颜色");
+        pane.setText("按下任意键开始，请选出文字描述的颜色");
         pane.setFont(new Font("宋体", Font.PLAIN, 50));
         panel2.add(pane);
         button1.setFont(f);
