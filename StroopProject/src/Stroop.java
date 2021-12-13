@@ -24,7 +24,7 @@ public class Stroop{
     static Color[] color1_2 = {Color.BLACK,Color.BLUE,Color.GREEN,Color.RED,Color.RED};
     static String[] answer1_2 = {"红色","黑色","红色","绿色","蓝色"};
     static String[] test1_3 ={"蓝色","蓝色","红色","红色","黑色"};
-    static Color[] color1_3 = {Color.RED,Color.BLUE,Color.RED,Color.RED,Color.BLACK};
+    static Color[] color1_3 = {Color.BLUE,Color.BLUE,Color.RED,Color.RED,Color.BLACK};
     static String[] answer1_3 = {"蓝色","蓝色","红色","红色","黑色"};
     static String[] test2_1 ={"Green","Blue","Red","Black","Green"};
     static Color[] color2_1 = {Color.BLACK,Color.BLACK,Color.BLACK,Color.BLACK,Color.BLACK};
